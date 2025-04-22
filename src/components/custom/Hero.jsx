@@ -62,7 +62,7 @@ export default function Hero() {
           placeholder="Your email"
         />
         <button className="btn-primary" onClick={handleSubmit}>
-          Submit
+          Join Waitlist
         </button>
         {/* <form onSubmit={handleSubmit}>
         </form> */}
