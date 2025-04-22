@@ -46,7 +46,7 @@ export default function Hero() {
         </button>
       </Tag>
       <h1 className="hero-h1">
-        Turn Visitors into Buyers with Scrollable Reels
+        Turn Visitors into Buyers with Shoppable Reels
       </h1>
       <p className="para">
         Capture attention. Build trust. Drive more sales right from your
