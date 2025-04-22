@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", "sans-serif";
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  /* Configure your theme variables here */
+  --font-display: "Inter", "sans-serif";
+  --color-primary: #ffd900;
+  --color-base: #5e5e5e;
+  --color-border: #f0eff1;
+  --color-para: #7c7c7c;
+  --spacing: 0.25rem;
+}
+
+@layer base {
+  h1 {
+    @apply text-6xl font-bold
+  }
+
+  button {
+    @apply cursor-pointer
+  }
+
+  input {
+    @apply border border-border rounded-xl p-2 text-sm outline-cyan-200
+  }
+}
+
+@layer components {
+  .hero-h1 {
+    @apply text-6xl font-bold
+  }
+
+  .para {
+    @apply text-para
+  }
+
+  .btn-primary {
+    @apply text-sm font-medium border border-cyan-300 bg-linear-to-bl from-cyan-400 via-cyan-500 to-cyan-600 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition
+  }
+
+  .btn-cta {
+    @apply bg-primary text-white font-bold w-fit mx-auto p-2 my-2 rounded-md
+  }
+
+  .container {
+    @apply my-36 text-center
+  }
+}
