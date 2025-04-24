@@ -1,5 +1,6 @@
 import React from "react";
 import ReactLogo from "../../assets/react.svg";
+import { motion } from "motion/react";
 
 const navItems = [
   {
@@ -18,7 +19,20 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-start w-fit gap-2 mx-auto my-6 items-center p-2 rounded-xl bg-linear-to-b from-zinc-700 via-zinc-800 to-zinc-900 to-90% to text-white">
+    <motion.nav
+      initial={{
+        y: 20,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+      transition={{
+        duration: 0.5,
+      }}
+      className="flex justify-start w-fit gap-2 mx-auto my-6 items-center p-2 rounded-xl bg-linear-to-b from-zinc-700 via-zinc-800 to-zinc-900 to-90% to text-white"
+    >
       <div className="flex justify-between items-center gap-2 pr-4">
         <img className="w-10" src="/Scrollify_logo.png" alt="logo" />
         <p>Scrollify</p>
@@ -51,6 +65,6 @@ export default function Navbar() {
           </a>
         </ul>
       </div> */}
-    </nav>
+    </motion.nav>
   );
 }

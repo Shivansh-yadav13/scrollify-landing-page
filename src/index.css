@@ -17,36 +17,40 @@
 
 @layer base {
   h1 {
-    @apply text-6xl font-bold
+    @apply text-6xl font-bold;
   }
 
   button {
-    @apply cursor-pointer
+    @apply cursor-pointer;
   }
 
   input {
-    @apply border border-border rounded-xl p-2 text-sm outline-cyan-200
+    @apply border border-border rounded-xl p-2 text-sm outline-cyan-200;
   }
 }
 
 @layer components {
   .hero-h1 {
-    @apply text-6xl font-bold
+    @apply text-6xl font-bold;
   }
 
   .para {
-    @apply text-para
+    @apply text-para;
   }
 
   .btn-primary {
-    @apply text-sm font-medium border border-cyan-300 bg-linear-to-bl from-cyan-400 via-cyan-500 to-cyan-600 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition
+    @apply text-sm font-medium border border-cyan-300 bg-linear-to-bl from-cyan-400 via-cyan-500 to-cyan-600 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
   }
 
-  .btn-cta {
-    @apply bg-primary text-white font-bold w-fit mx-auto p-2 my-2 rounded-md
+  .btn-base {
+    @apply text-sm font-medium border border-zinc-900 bg-linear-to-b from-zinc-700 via-zinc-800 to-zinc-900 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
+  }
+
+  .btn-light {
+    @apply text-sm font-medium border border-border bg-linear-to-bl from-gray-50 via-gray-200 to-gray-100 to-90% text-black px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
   }
 
   .container {
-    @apply my-36 text-center
+    @apply my-36 text-center;
   }
 }

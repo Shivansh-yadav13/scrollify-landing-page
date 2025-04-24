@@ -12,7 +12,7 @@ export default function CTABanner() {
           Join the waitlist to get early access and enjoy a 14-day free trial.
         </p>
         <a href="#waitlist">
-          <Button>Join Waitlist</Button>
+          <Button className="btn-light">Join Waitlist</Button>
         </a>
       </div>
       {/* <video

@@ -1,7 +1,18 @@
-export default function Button({ children }) {
+import { motion } from "motion/react";
+
+export default function Button({ className, onClick, children }) {
   return (
-    <button className="w-fit text-sm font-medium bg-white text-black border border-gray-300 p-4 shadow-xs rounded-lg hover:bg-gray-100 transition">
-      { children }
-    </button>
+    <motion.button
+      whileTap={{
+        scale: 0.9,
+      }}
+      transition={{
+        duration: 0.1,
+      }}
+      className={className}
+      onClick={onClick}
+    >
+      {children}
+    </motion.button>
   );
 }

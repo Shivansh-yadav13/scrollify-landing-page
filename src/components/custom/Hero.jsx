@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // components
-import { Tag } from "./index";
+import { Button, Tag } from "./index";
 
 export default function Hero() {
   const [email, setEmail] = useState("");
@@ -61,9 +61,9 @@ export default function Hero() {
           name="email"
           placeholder="Your email"
         />
-        <button className="btn-primary" onClick={handleSubmit}>
+        <Button className="btn-primary" onClick={handleSubmit}>
           Join Waitlist
-        </button>
+        </Button>
         {/* <form onSubmit={handleSubmit}>
         </form> */}
         {/* <ButtonBase>Get Started - It's Free</ButtonBase> */}
