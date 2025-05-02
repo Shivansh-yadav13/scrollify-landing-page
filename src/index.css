@@ -41,15 +41,15 @@
   }
 
   .btn-primary {
-    @apply text-sm font-medium border border-cyan-300 bg-linear-to-bl from-cyan-400 via-cyan-500 to-cyan-600 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
+    @apply w-fit mx-auto text-sm font-medium border border-cyan-300 bg-linear-to-bl from-cyan-400 via-cyan-500 to-cyan-600 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
   }
 
   .btn-base {
-    @apply text-sm font-medium border border-zinc-900 bg-linear-to-b from-zinc-700 via-zinc-800 to-zinc-900 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
+    @apply w-fit mx-auto text-sm font-medium border border-zinc-900 bg-linear-to-b from-zinc-700 via-zinc-800 to-zinc-900 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
   }
 
   .btn-light {
-    @apply text-sm font-medium border border-border bg-linear-to-bl from-gray-50 via-gray-200 to-gray-100 to-90% text-black px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
+    @apply w-fit mx-auto text-sm font-medium border border-border bg-linear-to-bl from-gray-50 via-gray-200 to-gray-100 to-90% text-black px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
   }
 
   .container {

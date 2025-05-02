@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+
 // components
 import { Button, Tag } from "./index";
+import FBPopup from "./FBPopup";
 
 export default function Hero() {
   const [email, setEmail] = useState("");
+  const [popup, setPopup] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevents page refresh
@@ -19,9 +22,7 @@ export default function Hero() {
         },
         body: formData,
       });
-
       if (response.ok) {
-        alert("Successfully joined the waitlist!");
         setEmail("");
       } else {
         const data = await response.json();
@@ -32,72 +33,78 @@ export default function Hero() {
       console.error("Error:", error);
       alert("There was a problem submitting the form.");
     }
+
+    setPopup(true);
   };
 
   return (
-    <div
-      id="waitlist"
-      className="text-center flex flex-col justify-center gap-5 py-5"
-    >
-      <Tag>
-        <p className="italic">Get a 14-day free trail</p>
-        <button className="bg-linear-to-b from-cyan-400 to-cyan-200 font-semibold rounded-full py-2 px-3">
-          Join Waitlist
-        </button>
-      </Tag>
-      <h1 className="hero-h1">
-        Turn Visitors into Buyers with Shoppable Reels
-      </h1>
-      <p className="para">
-        Capture attention. Build trust. Drive more sales right from your
-        website.
-      </p>
-      <div className="flex justify-center gap-2">
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email"
-        />
-        <Button className="btn-primary" onClick={handleSubmit}>
-          Join Waitlist
-        </Button>
-        {/* <form onSubmit={handleSubmit}>
+    <>
+      {popup && <FBPopup setPopup={setPopup} />}
+      <div
+        id="waitlist"
+        className="text-center flex flex-col justify-center gap-5 py-5"
+      >
+        <Tag>
+          <p className="italic">Get a 14-day free trail</p>
+          <button className="bg-linear-to-b from-cyan-400 to-cyan-200 font-semibold rounded-full py-2 px-3">
+            Join Waitlist
+          </button>
+        </Tag>
+        <h1 className="hero-h1">
+          Turn 👥 Visitors into 🛍️ Buyers <br /> with Shoppable Reels
+        </h1>
+        <p className="para">
+          Capture attention. Build trust. Drive more sales right from your 🛒
+          storefront.
+        </p>
+        <div className="w-fit mx-auto flex justify-center gap-4">
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            className=""
+          />
+          <Button className="btn-primary" onClick={handleSubmit}>
+            Join Waitlist
+          </Button>
+          {/* <form onSubmit={handleSubmit}>
         </form> */}
-        {/* <ButtonBase>Get Started - It's Free</ButtonBase> */}
-        {/* <Button>Join Waitlist</Button> */}
+          {/* <ButtonBase>Get Started - It's Free</ButtonBase> */}
+          {/* <Button>Join Waitlist</Button> */}
+        </div>
+        <div className="flex my-6 gap-x-20 justify-center">
+          <div className="-skew-6">
+            <video
+              autoPlay
+              muted
+              loop
+              src="/videos/singlereel1.mp4"
+              className="rounded-4xl w-52"
+            />
+          </div>
+          <div>
+            <video
+              autoPlay
+              muted
+              loop
+              src="/videos/singlereel2.mp4"
+              className="rounded-4xl w-56"
+            />
+          </div>
+          <div className="skew-6">
+            <video
+              autoPlay
+              muted
+              loop
+              src="/videos/singlereel3.mp4"
+              className="rounded-4xl w-52"
+            />
+          </div>
+        </div>
       </div>
-      <div className="flex my-6 gap-x-20 justify-center">
-        <div className="-skew-6">
-          <video
-            autoPlay
-            muted
-            loop
-            src="/videos/singlereel1.mp4"
-            className="rounded-4xl w-52"
-          />
-        </div>
-        <div>
-          <video
-            autoPlay
-            muted
-            loop
-            src="/videos/singlereel2.mp4"
-            className="rounded-4xl w-56"
-          />
-        </div>
-        <div className="skew-6">
-          <video
-            autoPlay
-            muted
-            loop
-            src="/videos/singlereel3.mp4"
-            className="rounded-4xl w-52"
-          />
-        </div>
-      </div>
-    </div>
+    </>
   );
 }

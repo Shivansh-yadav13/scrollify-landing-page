@@ -19,7 +19,7 @@ export default function WidgetShowcase() {
         </Tag>
         <h1>Widgets</h1>
         <p className="para">
-        Plug & Play Reels for Your Store
+        Designed to work with Shopify, WooCommerce, and custom stacks. No devs needed. Just copy-paste and go live in minutes.
         </p>
         <div className="w-fit mx-auto flex justify-between gap-2">
           {wTypes.map((w, k) => (

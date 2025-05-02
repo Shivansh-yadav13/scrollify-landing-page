@@ -5,8 +5,7 @@ export default function CTABanner() {
     <div className="flex justify-between bg-linear-to-bl from-cyan-600 via-cyan-800 to-cyan-700 to-90% w-fit mx-auto rounded-4xl p-10">
       <div className="flex flex-col gap-2">
         <h2 className=" text-white text-3xl font-bold">
-          No More Costly Conversion Hacks. Launch Scrollify in minutes and start
-          growing your sales and AOV!
+          Stop Burning Budget on Low-Converting Tactics
         </h2>
         <p className="text-white">
           Join the waitlist to get early access and enjoy a 14-day free trial.

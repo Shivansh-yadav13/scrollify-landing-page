@@ -6,21 +6,21 @@ import { Box } from "react-feather";
 
 const featStart = [
   {
-    title: "Boost Sales with Shoppable Reels",
+    title: "Shoppable Reels = Seamless Buying Journey",
     description:
-      "Shoppable reels keep visitors engaged and lead them straight to checkout cutting friction and boosting trust.",
+      "Embed reels that link directly to your product pages. Remove friction, shorten the path to purchase, and increase conversion rates.",
     icon: <ChartArea />,
   },
   {
-    title: "Endless Scrolling, More Exposure",
+    title: "Looping Feeds That Boost Engagement",
     description:
-      "Loop your best reels and let users binge your content like a product Netflix keeping them on your site longer.",
+      "Think product Netflix. Auto-loop your best reels to keep visitors on-site longer, lowering bounce and boosting product exposure.",
     icon: <LucideEye />,
   },
   {
-    title: "Show, Don’t Tell",
+    title: "UGC That Feels Native",
     description:
-      "Reels feel authentic. Show real people using your product and earn instant trust.",
+      "Buyers trust people, not websites. Use real customer or influencer content that shows your product in action. Build instant trust and social proof.",
     icon: <Film />,
   },
 ];

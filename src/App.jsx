@@ -13,6 +13,7 @@ import {
   Footer,
 } from "./components/custom/index";
 import Benefits from "./components/custom/Benefits";
+import Copy from "./components/custom/Copy";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Container>
         <Hero />
+        <Copy />
         <Benefits />
         {/* <Demo /> */}
         <WidgetShowcase />
