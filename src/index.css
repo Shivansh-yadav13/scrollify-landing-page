@@ -10,7 +10,9 @@
 @theme inline {
   /* Configure your theme variables here */
   --font-display: "Inter", "sans-serif";
-  --color-primary: #ffd900;
+  --color-primary: #FF0037;
+  --color-primary-dark: #9F0040;
+  --color-primary-light: #FF89A3;
   --color-base: #5e5e5e;
   --color-border: #f0eff1;
   --color-para: #7c7c7c;
@@ -41,7 +43,7 @@
   }
 
   .btn-primary {
-    @apply w-fit mx-auto text-sm font-medium border border-cyan-300 bg-linear-to-bl from-cyan-400 via-cyan-500 to-cyan-600 to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
+    @apply w-fit mx-auto text-sm font-medium border border-primary-dark bg-linear-to-bl from-primary via-primary-dark to-primary to-90% text-white px-6 py-2 rounded-lg shadow-md hover:opacity-90 transition;
   }
 
   .btn-base {

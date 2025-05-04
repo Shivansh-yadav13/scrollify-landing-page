@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function CTABanner() {
   return (
-    <div className="flex justify-between bg-linear-to-bl from-cyan-600 via-cyan-800 to-cyan-700 to-90% w-fit mx-auto rounded-4xl p-10">
+    <div className="flex justify-between bg-linear-to-bl from-primary-dark via-primary to-primary-dark to-90% w-fit mx-auto rounded-4xl p-10">
       <div className="flex flex-col gap-2">
         <h2 className=" text-white text-3xl font-bold">
           Stop Burning Budget on Low-Converting Tactics

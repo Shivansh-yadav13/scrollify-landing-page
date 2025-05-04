@@ -46,7 +46,7 @@ export default function Hero() {
       >
         <Tag>
           <p className="italic">Get a 14-day free trail</p>
-          <button className="bg-linear-to-b from-cyan-400 to-cyan-200 font-semibold rounded-full py-2 px-3">
+          <button className="bg-linear-to-b from-primary to-primary-light font-semibold rounded-full py-2 px-3">
             Join Waitlist
           </button>
         </Tag>
