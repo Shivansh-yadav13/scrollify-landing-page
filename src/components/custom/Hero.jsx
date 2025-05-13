@@ -50,7 +50,7 @@ export default function Hero() {
             Join Waitlist
           </button>
         </Tag>
-        <h1 className="hero-h1">
+        <h1 className="hero-heading">
           Turn 👥 Visitors into 🛍️ Buyers <br /> with Shoppable Reels
         </h1>
         <p className="para">
@@ -75,7 +75,7 @@ export default function Hero() {
           {/* <ButtonBase>Get Started - It's Free</ButtonBase> */}
           {/* <Button>Join Waitlist</Button> */}
         </div>
-        <div className="flex my-6 gap-x-20 justify-center">
+        <div className="flex my-6 gap-x-6 lg:gap-x-20 justify-center">
           <div className="-skew-6">
             <video
               autoPlay
