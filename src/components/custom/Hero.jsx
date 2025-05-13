@@ -42,14 +42,14 @@ export default function Hero() {
       {popup && <FBPopup setPopup={setPopup} />}
       <div
         id="waitlist"
-        className="text-center flex flex-col justify-center gap-5 py-5"
+        className="text-center flex flex-col justify-center gap-5 py-5 my-10"
       >
-        <Tag>
+        {/* <Tag>
           <p className="italic">Get a 14-day free trail</p>
           <button className="bg-linear-to-b from-primary to-primary-light font-semibold rounded-full py-2 px-3">
             Join Waitlist
           </button>
-        </Tag>
+        </Tag> */}
         <h1 className="hero-heading">
           Turn 👥 Visitors into 🛍️ Buyers <br /> with Shoppable Reels
         </h1>
@@ -58,7 +58,7 @@ export default function Hero() {
           storefront.
         </p>
         <div className="w-fit mx-auto flex justify-center gap-4">
-          <input
+          {/* <input
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             type="email"
@@ -66,10 +66,12 @@ export default function Hero() {
             name="email"
             placeholder="Your email"
             className=""
-          />
-          <Button className="btn-primary" onClick={handleSubmit}>
-            Join Waitlist
+          /> */}
+          <a target="_blank" href="https://dashboard.scrollify.app">
+          <Button className="btn-primary">
+            Get Started
           </Button>
+          </a>
           {/* <form onSubmit={handleSubmit}>
         </form> */}
           {/* <ButtonBase>Get Started - It's Free</ButtonBase> */}

@@ -10,8 +10,8 @@ export default function CTABanner() {
         <p className="text-white">
           Join the waitlist to get early access and enjoy a 14-day free trial.
         </p>
-        <a href="#waitlist">
-          <Button className="btn-light">Join Waitlist</Button>
+        <a target="_blank" href="https://dashboard.scrollify.app">
+          <Button className="btn-light">Get Started</Button>
         </a>
       </div>
       {/* <video
